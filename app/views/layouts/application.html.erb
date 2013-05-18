@@ -7,6 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+			<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class = "container">
+					<a href="#" class="brand"> ConveySation </a>
+					<ul class="nav">
+						<li><%= link_to "All Statuses", statuses_path %></li>
+						<li><%= link_to "New Status", new_status_path %></li>
+				</div>
+			</div>
+		</div>
 			<div class ="container">
 				<%= yield %>
 			</div>

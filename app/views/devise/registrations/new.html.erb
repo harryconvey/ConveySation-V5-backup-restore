@@ -1,16 +1,10 @@
 <div class="row">
-<<<<<<< HEAD
+
   <div class="span5">
 <h1><legend>Sign up and enter a new world</legend></h1>
 <div class="row">
   <div class="span5">
-=======
-  <div class="span4">
-<h1><legend>Sign up</legend></h1>
-<div class="row">
-  <div class="span4">
->>>>>>> 528ec18cb9e3d6bdd4e887f7944a312116d78190
-    
+ 
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
   <%= devise_error_messages! %>
   <div><%= f.label :first_name %><br />
@@ -22,18 +16,6 @@
   <div><%= f.label :profile_name %><br />
     <%= f.text_field :profile_name %></div>
 
-<<<<<<< HEAD
-=======
-    <% end %>
-<div class="row">
- <div class="span8">
-    <h2>Sign up and enter a new world</h2>
-  </div>
-</div>
-
-
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
->>>>>>> 528ec18cb9e3d6bdd4e887f7944a312116d78190
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 

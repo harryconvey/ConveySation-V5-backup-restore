@@ -12,11 +12,11 @@
 	  <% if devise_mapping.rememberable? -%>
 	    <div><%= f.input :remember_me, as: :boolean %></div>
 	  <% end -%>
-
+   <div class="btn btn-danger">
 	  <div><%= f.button :submit, "Sign in" %></div>
 	</fieldset>
 	<% end %>
-
+   </div>
 	<%= render "devise/shared/links" %>
 	</div>
 

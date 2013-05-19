@@ -4,7 +4,7 @@
 <div class="row">
   <div class="span4">
     
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
   <%= devise_error_messages! %>
   <div><%= f.label :first_name %><br />
     <%= f.text_field :first_name %></div>
@@ -15,6 +15,15 @@
   <div><%= f.label :profile_name %><br />
     <%= f.text_field :profile_name %></div>
 
+    <% end %>
+<div class="row">
+ <div class="span8">
+    <h2>Sign up and enter a new world</h2>
+  </div>
+</div>
+
+
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 
@@ -24,14 +33,11 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
-
-  <div><%= f.submit "Sign up" %></div>
+  <div class="btn btn-danger">
+   <div><%= f.button :submit, "Sign in" %></div> 
 <% end %>
-<%= render "devise/shared/links" %>
+</div>
 
-
-
-<div class="span8">
-    <h2>Sign up and enter a new world</h2>
-  </div>
+<div class="btn btn-danger">
+  <%= render "devise/shared/links" %>
 </div>

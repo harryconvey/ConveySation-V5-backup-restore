@@ -6,12 +6,16 @@
 
 <% @statuses.each do |status| %>
 <div class="status">
+<<<<<<< HEAD
   <div class="row">
   <div class="span3">
           <legend><%= status.user.full_name %></legend>
   </div>
   </div>
 
+=======
+  <strong><%= status.user.full_name %></strong>
+>>>>>>> 528ec18cb9e3d6bdd4e887f7944a312116d78190
   <p><%= status.content %></p>
   <div class="meta">
     <%= link_to time_ago_in_words(status.created_at) + " ago", status %> 
